@@ -1,0 +1,49 @@
+Privacy Policy for Trailblazer
+
+Effective Date: November 11, 2026
+Developer: Trailblazer App
+Contact: privacy@trailblazerapp.com
+
+Trailblazer ("we", "our", or "the App") is an offline-first personal habit, goal, and monthly productivity planner designed with absolute privacy, zero third-party telemetry, and hardware-backed on-device security.
+
+1. Zero Cloud Data Collection
+
+Trailblazer operates 100% on-device. We do not collect, upload, sell, or transmit your personal information, tasks, goals, notes, life logs, or device identifiers to any external server or third-party service.
+
+No Remote User Accounts: You do not need to create an account or provide an email address to use Trailblazer.
+No Third-Party Analytics / Trackers: Trailblazer contains no tracking SDKs, no advertisement frameworks, and no telemetry software.
+No Generative AI Cloud Offloading: All parsing, schedule unpacking, and trophy evaluations run deterministically on your local device CPU.
+2. Permissions & How They Are Used
+
+Trailblazer requests only the minimum permissions necessary to deliver local user-initiated productivity features:
+
+Calendar (android.permission.READ_CALENDAR, WRITE_CALENDAR):
+Purpose: Used strictly when the user chooses to synchronize their monthly recurring tasks or view today's agenda within the app.
+Data Handling: Calendar data is read and written directly to your device's native calendar provider. Calendar events are never transmitted off your device.
+Notifications (android.permission.POST_NOTIFICATIONS):
+Purpose: Delivers local, scheduled reminders for your daily brief and urgent task deadlines. Notifications are generated locally by Android AlarmManager.
+Biometric (android.permission.USE_BIOMETRIC):
+Purpose: Allows unlocking the local application vault using your device's fingerprint or PIN. Authentication is handled by Android BiometricPrompt; biometric data never leaves Android OS secure hardware.
+3. On-Device Encryption & Security
+
+All application data is stored in a private local SQLite database protected by the Android Keystore.
+
+When enabled in the Vault settings, the database file is encrypted using AES-256-GCM with hardware-backed master key wrapping.
+Screen protection (FLAG_SECURE) can be toggled to prevent other apps and Android recent-apps previews from capturing screenshots of your private planner.
+4. Data Portability & Total Erasure (GDPR / APP Compliance)
+
+You have complete ownership and control over your data:
+
+Export Data: You can export your entire database to unencrypted JSON or an encrypted backup string at any time.
+Right to Erasure (Delete Everything): You can wipe all tasks, goals, badges, logs, and settings permanently with a single tap in Vault → Security & Privacy → Delete Everything / Reset Template.
+5. Children's Privacy
+
+Trailblazer does not collect personal data from anyone, including children under 13.
+
+6. Changes to This Policy
+
+If we update this Privacy Policy, the revised version will be published within the application and at this repository URL.
+
+7. Contact
+
+For any questions regarding privacy or data handling: Email: support@trailblazerapp.com
